@@ -7,10 +7,10 @@ const app = express();
 const jsonParser = express.json();
 const port = 8080;
 
-const promoPath = "C:\\Projects\\code-workspace\\Яндекс\\promo.json";
-const prizePath = "C:\\Projects\\code-workspace\\Яндекс\\prize.json";
-const resultPath = "C:\\Projects\\code-workspace\\Яндекс\\result.json";
-const userPath = "C:\\Projects\\code-workspace\\Яндекс\\user.json";
+const promoPath = __dirname + "\\promo.json";
+const prizePath = __dirname +"\\prize.json";
+const resultPath = __dirname + "\\result.json";
+const userPath = __dirname + "\\user.json";
 
 app.use(express.static(__dirname + "/public"))
 
